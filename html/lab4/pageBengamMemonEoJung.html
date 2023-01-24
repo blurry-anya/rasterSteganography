@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BengamMemonEoJung</title>
+    <link rel="stylesheet" href="../../styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="methods">
+    <ul>
+        <li><a href="../lab1/pageLSB.html">LSB</a></li>
+        <li><a href="../lab1/pagePRI.html">PRI</a></li>
+        <li><a href="../lab1/pagePRS.html">PRS</a></li>
+        <li><a href="../lab2/pageBlock.html">Block</a></li>
+        <li><a href="../lab2/pageChrist.html">Cutter-Jordan-Bossen</a></li>
+        <li><a href="../lab3/pageSpectrumExpansion.html">DirectSpectrum</a></li>
+        <li><a href="../lab3/pageKvaziOrth.html">Kvaziorthogonal</a></li>
+        <li><a href="../lab4/pageKochZhao.html">KochZhao</a></li>
+
+    </ul>
+</div>
+<div class='global-wrapper'>
+    <header>
+        <div>Steganography</div>
+        <div>Bengam-Memon-Eo-Jung</div>
+        <div>Kononchenko Anna</div>
+    </header>
+    <div class="container-wrapper"></div>
+
+    <div class="buttons">
+        <button id='readRedbtn'>Use red</button>
+        <button id='readGreenbtn'>Use green</button>
+        <button id='readBluebtn'>Use blue</button>
+        <button id='invertbtn'>Invert</button>
+        <button id='grayscalebtn'>Gray</button>
+        <button id='clearbtn'>Clear</button>
+        <button id='encodebtn'>Encode</button>
+        <button id='decodebtn'>Decode</button>
+        <label for="uploadbtn" class="file-upload">
+            Upload Image
+        </label>
+        <input type="file" id='uploadbtn' />
+        <button id='downloadbtn'>Download</button>
+    </div>
+
+    <div class="input-wrapper">
+        <div class="inputButtons">
+            <div class="textBtn-wrapper">
+                <button id='loadText1Btn'>Text1</button>
+                <button id='loadText2Btn'>Text2</button>
+                <button id='loadText3Btn'>Text3</button>
+            </div>
+            <div class="chart-wrapper">
+                <button id="showChartBtn">Charts</button>
+            </div>
+        </div>
+        <div class = 'input'>
+            <textarea placeholder="Enter message for encoding.." type="text" id='message'></textarea>
+        </div>
+    </div>
+
+</div>
+<div class="chartsWrapper noDisplay">
+    <div class="chartBtnWrapper">
+        <div class="closeButton">Close</div>
+        <div class="calcButton">Calculate</div>
+    </div>
+    <div class="chartsContent">
+        <div class="chart"><canvas id = 'correctnessCanvasG'></canvas></div>
+        <div class="chart"><canvas id = 'distortionCanvasG'></canvas></div>
+        <div class="chart"><canvas id = 'correctnessCanvasK'></canvas></div>
+        <div class="chart"><canvas id = 'distortionCanvasK'></canvas></div>
+    </div>
+
+</div>
+
+<script src="../../js/main.js"></script>
+<script src="../../js/lab4/DCT.js"></script>
+<script src="../../js/lab4/steganoBengamMemonEoJung.js"></script>
+<script src="../../js/lab4/JPEGcharts.js"></script>
+
+
+</body>
+</html>

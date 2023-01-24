@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.global-wrapper{
+    width: 60rem;
+    height: 50rem;
+    /* left: 15rem; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    width: 96%;
+    background-color: #fff8fd;
+    padding: 1% 2%;
+}
+
+header div{
+    text-shadow: cornsilk;
+    font-weight: bold;
+    font-family: "Book Antiqua";
+    font-size: 26px;
+}
+
+.methods{
+    left: 5rem;
+    top: 1.5rem;
+    position: absolute;
+    display: inline-block;
+}
+.methods ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    /*height: 7rem;*/
+    width: 5rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.methods ul li {
+    width: 5rem;
+    min-height: 2.5rem;
+    max-height: 5rem;
+    word-break: break-all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8a6789;
+    border-radius: 10px 20px;
+    padding: 0 2%;
+}
+
+.methods ul li a{
+    font-family: "Courier New";
+    text-decoration: darkred;
+    font-size: .8rem;
+    color: #fff8fd;
+}
+
+.methods ul li a:hover{
+    /*font-size: .85rem;*/
+    color: darkred;
+}
+.methods ul li:hover{
+    border-radius: 5px;
+}
+
+
+
+.container-wrapper{
+    border: 5px solid #d3cfde;
+    width: 95%;
+    padding: 2%;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    /*background-color: lightskyblue;*/
+    /*position: absolute;*/
+}
+
+#container{
+    position: relative;
+}
+
+.buttons{
+    width: 96%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border-bottom: 5px solid #d3cfde;
+}
+
+#uploadbtn{
+    display: none;
+}
+
+/*.buttons button, .textBtn-wrapper button {*/
+button, .file-upload{
+    width: 5rem;
+    height: 2rem;
+    color: darkred;
+    font-family: "Courier New";
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+    border: darkred;
+    background-color: white;
+}
+
+button:hover, .file-upload:hover{
+    font-weight: bold;
+    color: forestgreen;
+    background-color: #d3cfde;
+    border: 1px solid #8a6789;
+    border-radius: 6px;
+}
+
+.input-wrapper{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    /*position: relative;*/
+
+}
+
+.inputButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input{
+    /*border: 1px solid black;*/
+    margin-top: .5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+}
+
+.textBtn-wrapper{
+    padding: 0.5% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: flex-start;
+    margin-left: 3%;
+}
+.chart-wrapper{
+    margin-right: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#message{
+    width: 95%;
+    height: 90%;
+    border-radius: 10px;
+    margin: 0 1.5%;
+    padding: 1%;
+    border: 1px solid silver;
+}
+#messageOutput{
+    width: 95%;
+    height: 90%;
+    border-radius: 10px;
+    margin: 0 1.5%;
+    padding: 1%;
+    border: 1px solid silver;
+}
+
+.hoverCanvas{
+    position: absolute;
+    opacity: 0;
+}
+
+.hoverCanvas:hover{
+    opacity: 100%;
+}
+
+/*.active, .choice:hover {*/
+/*    background-color: #666;*/
+/*    color: white;*/
+/*    border: 1px solid red;*/
+/*}*/
+
+.chartsWrapper{
+    border: 1px solid #afb7b7;
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    margin-left: 20vw;
+    background-color: #fff8fd;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 5000px 5px #afb7b7;
+}
+
+.noDisplay{
+    display: none;
+}
+.chartBtnWrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.closeButton{
+    position: absolute;
+    right: 0;
+    padding: 1% 1% 0 1%;
+    font-family: monospace;
+    font-weight: bold;
+    color: darkred;
+}
+.closeButton:hover{
+    color: #2bc1a8;
+    cursor: pointer;
+}
+
+.calcButton{
+    padding: 1%;
+    font-family: monospace;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.calcButton:hover, .switchButton:hover{
+    color: #3e8611;
+    cursor: pointer;
+}
+.chartsContent{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+.chart{
+    width: 50%;
+}
+
+.chartjs-render-monitor{
+    width: 50%;
+}
+
+/*
+DCT research styles
+*/
+#DCTres a{
+    font-family: "Courier New";
+    text-decoration: darkred;
+    font-size: 1rem;
+    color: #2f0c26;
+}
+#DCTres a:hover{
+    /*font-size: 1.1rem;*/
+    color: #8c5c82;
+}
+
+.container-wrapper-header{
+    font-family: "Times New Roman", serif;
+    font-size: 1.3rem;
+    padding: 1%;
+
+}
+
+
+

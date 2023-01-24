@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DCT res</title>
+    <link rel="stylesheet" href="../../styles/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+<body>
+<div class='global-wrapper'>
+    <header>
+        <div>Steganography</div>
+        <div>DCT research</div>
+        <div id="DCTres"><a href="pageKochZhao.html">Get back</a></div>
+        <div>Kononchenko Anna</div>
+    </header>
+    <div class="container-wrapper-header">High frequency demonstration</div>
+    <div class="container-wrapper" id = 'canvas1'></div>
+
+    <div class="container-wrapper-header">Low frequency demonstration</div>
+    <div class="container-wrapper" id = 'canvas2'></div>
+
+    <div class="buttons" style="display: none">
+        <button id='readRedbtn'>Use red</button>
+        <button id='readGreenbtn'>Use green</button>
+        <button id='readBluebtn'>Use blue</button>
+        <button id='invertbtn'>Invert</button>
+        <button id='grayscalebtn'>Gray</button>
+        <button id='clearbtn'>Clear</button>
+        <button id='encodebtn'>Encode</button>
+        <button id='decodebtn'>Decode</button>
+        <label for="uploadbtn" class="file-upload">
+            Upload Image
+        </label>
+        <input type="file" id='uploadbtn' />
+        <button id='downloadbtn'>Download</button>
+    </div>
+    <div class="input-wrapper" style="display: none">
+        <div class="textBtn-wrapper">
+            <button id='loadText1Btn'>Text1</button>
+            <button id='loadText2Btn'>Text2</button>
+            <button id='loadText3Btn'>Text3</button>
+        </div>
+        <textarea placeholder="Enter message for encoding.." type="text" id='message'></textarea>
+    </div>
+
+</div>
+
+<script src="../../js/main.js"></script>
+<script src="../../js/lab4/DCT.js"></script>
+<script src="../../js/lab4/DCTres.js"></script>
+
+
+</body>
+</html>
